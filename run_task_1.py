@@ -12,7 +12,7 @@ def angle_normalized_2(a: np.ndarray, b: np.ndarray) -> float:
     Get the angle between two vectors a and b in degrees.
     """
     delta = a - b
-    cell_angle_rad = np.atan2(delta[1], delta[0])
+    cell_angle_rad = np.arctan2(delta[1], delta[0])
     return np.degrees(cell_angle_rad)
 
 @lru_cache(maxsize=None)
